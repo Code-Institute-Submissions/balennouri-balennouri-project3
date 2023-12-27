@@ -43,17 +43,28 @@ def handle_turn(player):
     """
     Handles the turn and put the markers for each player.
     Tells the users who's turn it's.
-    don't let the players use a invalid input
+    don't let the players use a invalid input.
+    with while loop it checks the users input if it inavlid or correct or it will loop
+    to they choose a valid one.
     """
     print("Choose a position from 1-9\n")
     position = input("It is " + current_player + " turn to choose:")
+    
+    valid = False
+    while not valid:
 
-    while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-       position = input("Invalid input please " + current_player + " choose again:")
+      while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+        position = input("Invalid input please " + current_player + " choose again:")
 
-    position = int(position) - 1
+      position = int(position) - 1
+
+      if board[position] == "-":
+        valid = True
+      else:
+        print("That position is already taken. Go again.\n")
 
     board[position] = player
+
     display_board()
 
     

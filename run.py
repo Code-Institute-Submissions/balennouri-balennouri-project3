@@ -47,10 +47,10 @@ def start_the_game():
          clear_reset_screen()
          start_the_game()
       else:
-         print("Wrong input. Press 'p to play or 'r' to read the rules for the game!")
-         print("Choose Again: ")
+         print("Wrong input. Press 'p to play or 'q' to quit the game!")
+         user_choice = input("Choose Again: ")
 
-
+ 
 def display_board():
     """
     Create the board for Tic Tac Toe, how it should look like. 
@@ -82,7 +82,7 @@ def rules_for_game():
          start_the_game()
       else:
          print("Wrong input. Press 'p to play or 'q' to quit the game!")
-         print("Choose Again: ")
+         choice_of_user = input("Choose Again: ")
 
        
 def play_game():

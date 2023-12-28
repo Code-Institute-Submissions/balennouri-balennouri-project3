@@ -1,5 +1,6 @@
 import os
-#Globals Variables
+
+# Globals Variables
 # Game Board for tic tac toe
 board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
 
@@ -10,7 +11,7 @@ game_is_still_playing = True
 winner = None
 
 # Whos turn is it
-current_player = "X"
+current_player = 'X'
 
 def start_the_game():
    """
@@ -64,6 +65,20 @@ def rules_for_game():
     print("in a row, vertically, horizontally or diagonally.")
     print("")
     print("Now press 'p' to play or 'q' to quit the game!")
+    choice_of_user = input("Your Choice?: ")
+    while True:
+      if choice_of_user == "p":
+         clear_reset_screen()
+         play_game()
+      elif choice_of_user == "q":
+         clear_reset_screen()
+         start_the_game()
+      else:
+         print("Wrong input. Press 'p to play or 'q' to quit the game!")
+
+       
+       
+       
 
 
 def play_game():

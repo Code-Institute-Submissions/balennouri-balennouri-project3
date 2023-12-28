@@ -16,7 +16,7 @@ def start_the_game():
    """
    Give the user menu for start the game or quit.
    """
-   clear_screen()
+   clear_reset_screen()
    print("")
    print("Welcome to the Tic Tac Toe game\n")
    print("What's your names?\n")
@@ -31,14 +31,14 @@ def start_the_game():
    print("'q' To quit the game")
    user_choice = input("What's your choice: ")
    while True:
-      if user_choice == "p":
-         clear_screen()
-         play_game()
-      elif user_choice == "r":
-         clear_screen()
+      if user_choice == "r":
+         clear_reset_screen()
          rules_for_game()
+      elif user_choice == "p":
+         clear_reset_screen()
+         play_game()
       elif user_choice == "q":
-         clear_screen()
+         clear_reset_screen()
          start_the_game()
       else:
          print("Wrong input. Press 'p to play or 'r' to read the rules for the game!")
@@ -213,7 +213,7 @@ def flip_player():
       current_player = "X"
    return
 
-def clear_screen(numlines=100):
+def clear_reset_screen(numlines=100):
     """
     Clears the console to simplify UX and clear visual clutter.
     numlines is an fallback backup.

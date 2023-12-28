@@ -1,32 +1,59 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Balen Nouri Tic-Tac-Toe Game
 
-Welcome,
+## Table of Contents
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+- [Balen Nouri Tic-Tac-Toe Game](#balen-nouri-tic-tac-toe-game)
+  - [Table of Contents](#table-of-contents)
+  - [UX](#ux)
+    - [Website owners goals](#website-owners-goals)
+    - [User goals](#user-goals)
+  - [Features](#features)
+    - [Game](#game)
+    - [Future feature to implement](#future-feature-to-implement)
+  - [Technologies Used](#technologies-used)
+  - [Libraries used](#libraries-used)
+  - [Testing and Validation](#testing-and-validation)
+    - [PEP8](#pep8)
+    - [Manual testing](#manual-testing)
+    - [User stories testing](#user-stories-testing)
+    - [Bugs](#bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [How to deploy](#how-to-deploy)
+  - [Credits](#credits)
 
-## Reminders
+## UX
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Website owners goals
 
-## Creating the Heroku app
+### User goals
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Game
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Future feature to implement
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Technologies Used
 
-Connect your GitHub repository and deploy as normal.
+## Libraries used
 
-## Constraints
+## Testing and Validation
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### PEP8
 
----
+### Manual testing
 
-Happy coding!
+### User stories testing
+
+### Bugs
+
+### Unfixed Bugs
+
+## Deployment
+
+### How to deploy
+
+## Credits
+
+[Back to Table of contents](#balen-nouri-tic-tac-toe-game)

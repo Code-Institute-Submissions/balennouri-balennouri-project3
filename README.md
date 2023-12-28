@@ -1,8 +1,8 @@
-# Balen Nouri Tic-Tac-Toe Game
+# Balen Nouri Tic-Tac-Toe For 2 Players
 
 ## Table of Contents
 
-- [Balen Nouri Tic-Tac-Toe Game](#balen-nouri-tic-tac-toe-game)
+- [Balen Nouri Tic-Tac-Toe For 2 Players](#balen-nouri-tic-tac-toe-for-2-players)
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Website owners goals](#website-owners-goals)
@@ -56,4 +56,4 @@
 
 ## Credits
 
-[Back to Table of contents](#balen-nouri-tic-tac-toe-game)
+[Back to Table of contents](#balen-nouri-tic-tac-toe-for-2-players)

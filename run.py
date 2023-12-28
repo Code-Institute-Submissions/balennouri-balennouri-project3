@@ -48,6 +48,7 @@ def start_the_game():
          start_the_game()
       else:
          print("Wrong input. Press 'p to play or 'r' to read the rules for the game!")
+         print("Choose Again: ")
 
 
 def display_board():
@@ -81,6 +82,7 @@ def rules_for_game():
          start_the_game()
       else:
          print("Wrong input. Press 'p to play or 'q' to quit the game!")
+         print("Choose Again: ")
 
        
 def play_game():

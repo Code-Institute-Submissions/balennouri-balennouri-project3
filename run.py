@@ -1,3 +1,4 @@
+import os
 #Globals Variables
 # Game Board for tic tac toe
 board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
@@ -11,6 +12,37 @@ winner = None
 # Whos turn is it
 current_player = "X"
 
+def start_the_game():
+   """
+   Give the user menu for start the game or quit.
+   """
+   clear_screen()
+   print("")
+   print("Welcome to the Tic Tac Toe game\n")
+   print("What's your names?\n")
+   name = input("First Player: ")
+   print("Welcome " + name + " to the game!")
+   print(name + " will play with the 'X'\n")
+   name_2 = input("second Player: ")
+   print("Welcome " + name_2 + " to the game!")
+   print(name_2 + " will play with the 'O'\n")
+   print("'p' to play the game")
+   print("'r' to read the rules")
+   print("'q' To quit the game")
+   user_choice = input("What's your choice: ")
+   while True:
+      if user_choice == "p":
+         clear_screen()
+         play_game()
+      elif user_choice == "r":
+         clear_screen()
+         rules_for_game()
+      elif user_choice == "q":
+         clear_screen()
+         start_the_game()
+      else:
+         print("Wrong input. Press 'p to play or 'r' to read the rules for the game!")
+
 
 def display_board():
     """
@@ -19,6 +51,19 @@ def display_board():
     print(board[0] + " | " + board[1] + " | " + board[2])
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
+
+def rules_for_game():
+    """
+    Explain the game and the rules.
+    """
+    print("")
+    print("Tic-tac-toe is a game in which two players take turns in drawing")
+    print("either an 'O' or an 'X' in one square of a grid")
+    print("consisting of nine squares.")
+    print("The winner is the first player to get three of the same symbols")
+    print("in a row, vertically, horizontally or diagonally.")
+    print("")
+    print("Now press 'p' to play or 'q' to quit the game!")
 
 
 def play_game():
@@ -167,6 +212,21 @@ def flip_player():
    elif current_player == "O":
       current_player = "X"
    return
+
+def clear_screen(numlines=100):
+    """
+    Clears the console to simplify UX and clear visual clutter.
+    numlines is an fallback backup.
+    """
+    if os.name == "posix":
+        # for OS => Unix / Linux / MacOS / BSD / etc
+        os.system('clear')
+    elif os.name in ("nt", "dos", "ce"):
+        #  for OS => DOS / Windows
+        os.system('CLS')
+    else:
+        # Fallback for other operating systems.
+        print('\n' * numlines)
    
 
-play_game()
+start_the_game()

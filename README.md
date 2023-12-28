@@ -48,6 +48,16 @@
 
 ### Bugs
 
+At the start of the game, when the user can choose between rules, quit or play, the game will give the message to the user that they used an invalid command. The problem was, when the message showed up it just kept coming more and more. Below you can see how I solved it.
+
+- This is the code I used first that caused the bug.
+
+![Bug picture of code](assets/readme/bug-one-two.png)
+
+- This is the code I used that worked and removed the bug.
+
+![Bug solution](assets/readme/bug-one.png)
+
 ### Unfixed Bugs
 
 ## Deployment

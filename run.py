@@ -1,17 +1,22 @@
 import os
 
+
 # Globals Variables
 # Game Board for tic tac toe
 board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
 
+
 # If the game is still playing
 game_is_still_playing = True
+
 
 # Who won? or tie?
 winner = None
 
+
 # Whos turn is it
 current_player = 'X'
+
 
 def start_the_game():
    """
@@ -53,6 +58,7 @@ def display_board():
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
 
+
 def rules_for_game():
     """
     Explain the game and the rules.
@@ -77,10 +83,6 @@ def rules_for_game():
          print("Wrong input. Press 'p to play or 'q' to quit the game!")
 
        
-       
-       
-
-
 def play_game():
     """
     Play game displays the board, handles the turns,
@@ -227,6 +229,7 @@ def flip_player():
    elif current_player == "O":
       current_player = "X"
    return
+
 
 def clear_reset_screen(numlines=100):
     """

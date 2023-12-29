@@ -17,7 +17,6 @@ winner = None
 # Whos turn is it
 current_player = 'X'
 
-
 def start_menu():
    """
    This menu comes when user come in to the game.
@@ -28,6 +27,8 @@ def start_menu():
    clear_reset_screen()
    print("\nWelcome to the Tic Tac Toe game\n")
    print("You want to play singel player or multiplayer?\n")
+   print("------------------------------------------------")
+   print("------------------------------------------------\n")
    print("'s' To play singel player")
    print("'m' To play multiplayer")
    player_choice = input("What's your choice: ")
@@ -43,13 +44,17 @@ def start_menu():
          player_choice = input("Choose Again: ")
 
 
+
 def start_the_singelplayer():
    clear_reset_screen()
    print("\nWelcome to the singel player")
+   print("\n----------------------------")
+   print("------------------------------\n")
    print("We are sorry the singel player mode are not ready yet!")
    print("\n------------------------------------------------------")
    print("------------------------------------------------------\n")
    print("'r' to read the rules")
+   print("'m' to play multiplayer")
    print("'q' to go back to the menu\n")
    choice = input("Your Choice: ")
    while True:
@@ -59,8 +64,16 @@ def start_the_singelplayer():
       elif choice == "q":
          clear_reset_screen()
          start_menu()
+      elif choice == "m":
+         clear_reset_screen()
+         start_the_multiplayer()
       else:
-         print("\nWrong input. Press 'r' to read the rules and 'q' to go back to the start menu.")
+         print("Wrong input.")
+         print("Press 'r' to read the rules")
+         print("'m' to play multiplayer.")
+         print("'q' to go back to the start menu.\n")
+         print("---------------------------------")
+         print("---------------------------------\n")
          choice = input("Choose Again: ")
 
 
@@ -69,7 +82,9 @@ def start_the_multiplayer():
    Give the user menu for start the game or quit.
    """
    clear_reset_screen()
-   print("\nWelcome to the Tic Tac Toe game\n")
+   print("\nWelcome to the multiplayer")
+   print("----------------------------")
+   print("----------------------------\n")
    print("What's your names?\n")
    name = input("First Player: ")
    print("Welcome " + name + " to the game!")

@@ -37,13 +37,13 @@ def start_the_game():
    print("'q' To quit the game")
    user_choice = input("What's your choice: ")
    while True:
-      if user_choice == "r".upper():
+      if user_choice == "r":
          clear_reset_screen()
          rules_for_game()
-      elif user_choice == "p".upper():
+      elif user_choice == "p":
          clear_reset_screen()
          play_game()
-      elif user_choice == "q".upper():
+      elif user_choice == "q":
          clear_reset_screen()
          start_the_game()
       else:
@@ -74,10 +74,10 @@ def rules_for_game():
     print("Now press 'p' to play or 'q' to quit the game!")
     choice_of_user = input("Your Choice?: ")
     while True:
-      if choice_of_user == "p".upper():
+      if choice_of_user == "p":
          clear_reset_screen()
          play_game()
-      elif choice_of_user == "q".upper():
+      elif choice_of_user == "q":
          clear_reset_screen()
          start_the_game()
       else:

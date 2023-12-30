@@ -167,4 +167,6 @@ To deploy this page to Heroku from its GitHub repository the following steps wer
 
 ## Acknowledgements
 
+This site was developed as my Third portfolio project for the Code Institute course in Full Stack Software Development. I would like to thank my mentor David Bowers, the slack community and the Code Institute team.
+
 [Back to Table of contents](#balen-nouri-tic-tac-toe-for-2-players)

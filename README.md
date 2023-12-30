@@ -1,44 +1,87 @@
 # Balen Nouri Tic-Tac-Toe For 2 Players
 
+Three in a row or tic tac toe, everyone has played this game, maybe in school with paper and pen or on a real board.  For those who don’t know about the game, it’s a classic old game with 3 x 3 boxes for two players. One will play with the X and the other one with the O and the one who gets three in a row will win. So, if you and your friend want to challenge each other and wake up old memories from the classic game, click on the link below.
+
+[A live version of the website and the project can be accessed here:]()
+
+![Ami Responsive]()
+
 ## Table of Contents
 
 - [Balen Nouri Tic-Tac-Toe For 2 Players](#balen-nouri-tic-tac-toe-for-2-players)
   - [Table of Contents](#table-of-contents)
-  - [UX](#ux)
-    - [Website owners goals](#website-owners-goals)
-    - [User goals](#user-goals)
+  - [User Experience Design](#user-experience-design)
+    - [User Demographic](#user-demographic)
+    - [User stories](#user-stories)
   - [Features](#features)
     - [Game](#game)
-    - [Future feature to implement](#future-feature-to-implement)
+    - [Future Feature](#future-feature)
+  - [Languages Used](#languages-used)
   - [Technologies Used](#technologies-used)
   - [Libraries used](#libraries-used)
   - [Testing and Validation](#testing-and-validation)
     - [PEP8](#pep8)
     - [Manual testing](#manual-testing)
-    - [User stories testing](#user-stories-testing)
-    - [Bugs](#bugs)
+    - [Known Bugs](#known-bugs)
       - [Resolved](#resolved)
       - [Python Warnings and Bugs](#python-warnings-and-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
-    - [How to deploy](#how-to-deploy)
+    - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
+    - [Content And Code](#content-and-code)
+  - [Acknowledgements](#acknowledgements)
 
-## UX
+## User Experience Design
 
-### Website owners goals
+### User Demographic
 
-### User goals
+This website is meant for:
+
+- Users who want to play a game with a friend
+- User who loves old games.
+- User who wants to learn an easy game to play.
+
+### User stories
+
+As a user of this website:
+
+- To play a game against a friend.
+- Be able to read the rules and the meaning of the game.
+- Be able to play again or quit the game when the game is finished.
 
 ## Features
 
+- The game is easy to play and doesn’t need any special configurations.
+- When the user comes into the game, they are welcomed and can choose between some options.
+- If the user enters an invalid input, the user will get the chance to re-enter a command until it’s valid.
+
 ### Game
 
-### Future feature to implement
+images from the game
+
+### Future Feature
+
+Features to be added in the future:
+
+- Be able to play single player.
+- Be able to see scoreboard.
+- Be able to choose an own sign instead of X or O.
+- Put in some color to the game.
+
+## Languages Used
+
+- Python
 
 ## Technologies Used
 
+- Visual Studio Code to write the code and pushing to Github.
+- Github was used to store and create the repository.
+- Heroku was used to deploy the project.
+
 ## Libraries used
+
+- Os to create a clear_reset_screen(), which clears the screens so there's not so much clutter on the page.
 
 ## Testing and Validation
 
@@ -46,9 +89,9 @@
 
 ### Manual testing
 
-### User stories testing
+test on diffrent browsers
 
-### Bugs
+### Known Bugs
 
 #### Resolved
 
@@ -80,16 +123,26 @@ This was causing error when the user pushed on any of the options, Below you can
 
 ## Deployment
 
-### How to deploy
+### Heroku Deployment
 
-To deploy this page to Heroku from its [GitHub repository]() the following steps were taken:
+To deploy this page to Heroku from its GitHub repository the following steps were taken:
 
 - Log into or register a new account at [Heroku](https://www.heroku.com/).
 - Click on the button New in the top right corner of the dashboard.
 - From the drop-down menu then select Create new app.
 - Enter your app name in the first field, the names must be unique so check that the name you have chosen is available on Heroku, then select your region.
 - Click on Create App.
+- Set the buildbacks to python and NodeJS in that order.
+- Link the Heroku app to the respository.
+- Click on Deploy.
 
 ## Credits
+
+### Content And Code
+
+- The screenshot at the top of the ReadMe was built from [Ami Responsive.](https://ui.dev/amiresponsive)
+- The information about the game in the readme is taken from [wikipedia.](https://sv.wikipedia.org/wiki/Tre_i_rad)
+
+## Acknowledgements
 
 [Back to Table of contents](#balen-nouri-tic-tac-toe-for-2-players)

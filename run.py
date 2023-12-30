@@ -44,7 +44,6 @@ def start_menu():
          player_choice = input("Choose Again: ")
 
 
-
 def start_the_singelplayer():
    clear_reset_screen()
    print("\nWelcome to the singel player")

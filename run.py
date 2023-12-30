@@ -17,6 +17,7 @@ winner = None
 # Whos turn is it
 current_player = 'X'
 
+
 def start_menu():
    """
    This menu comes when user come in to the game.
@@ -115,6 +116,10 @@ def display_board():
     """
     Create the board for Tic Tac Toe, how it should look like. 
     """
+    print("\nReference board: \n")
+    print("|1|2|3|")
+    print("|4|5|6|")
+    print("|7|8|9| \n")
     print(board[0] + " | " + board[1] + " | " + board[2])
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])

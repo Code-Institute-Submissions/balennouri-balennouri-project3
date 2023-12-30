@@ -58,7 +58,29 @@ As a user of this website:
 
 ### Game
 
-images from the game
+Screenshots from the game:
+
+The welcome page:
+
+![start menu](assets/readme/start-menu.png)
+
+Single Player page:
+
+![Single player](assets/readme/single-player-menu.png)
+
+Multiplayer Page:
+
+![Multiplayer](assets/readme/multiplaye-meny.png)
+
+Rules for the game:
+
+![Rules](assets/readme/rules-meny.png)
+
+How the game board looks like:
+
+![Gameboard](assets/readme/play-game.png)
+
+![Gameboard 2](assets/readme/gameboard-two.png)
 
 ### Future Feature
 

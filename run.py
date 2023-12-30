@@ -21,16 +21,16 @@ current_player = 'X'
 def start_menu():
    """
    This menu comes when user come in to the game.
-   The user will have two options, to play singel player or multiplayer.
-   User will notice that the singelplayer mode is not ready when user push on it,
+   The user will have two options, to play single player or multiplayer.
+   User will notice that the singleplayer mode is not ready when user push on it,
    it will give a print message and inform the user.
    """
    clear_reset_screen()
    print("\nWelcome to the Tic Tac Toe game\n")
-   print("You want to play singel player or multiplayer?\n")
+   print("You want to play single player or multiplayer?\n")
    print("------------------------------------------------")
    print("------------------------------------------------\n")
-   print("'s' To play singel player")
+   print("'s' To play single player")
    print("'m' To play multiplayer")
    player_choice = input("What's your choice: ")
    while True:
@@ -39,21 +39,21 @@ def start_menu():
          start_the_multiplayer()
       elif player_choice == "s":
          clear_reset_screen()
-         start_the_singelplayer()
+         start_the_singleplayer()
       else:
-         print("\nWrong input. Press 's' to play singelplayer and 'm' to play mulitplayer.")
+         print("\nWrong input. Press 's' to play singleplayer and 'm' to play mulitplayer.")
          player_choice = input("Choose Again: ")
 
 
-def start_the_singelplayer():
+def start_the_singleplayer():
    """
-   Welcome the user to the singelplayer mode.
+   Welcome the user to the singleplayer mode.
    """
    clear_reset_screen()
-   print("\nWelcome to the singel player")
+   print("\nWelcome to the single player")
    print("\n----------------------------")
    print("------------------------------\n")
-   print("We are sorry the singel player mode are not ready yet!")
+   print("We are sorry the single player mode are not ready yet!")
    print("\n------------------------------------------------------")
    print("------------------------------------------------------\n")
    print("'r' to read the rules")

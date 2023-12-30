@@ -46,6 +46,9 @@ def start_menu():
 
 
 def start_the_singelplayer():
+   """
+   Welcome the user to the singelplayer mode.
+   """
    clear_reset_screen()
    print("\nWelcome to the singel player")
    print("\n----------------------------")
@@ -79,7 +82,7 @@ def start_the_singelplayer():
 
 def start_the_multiplayer():
    """
-   Give the user menu for start the game or quit.
+   Give the user the multiplayer menu, for start the game or quit.
    """
    clear_reset_screen()
    print("\nWelcome to the multiplayer")
@@ -114,7 +117,7 @@ def start_the_multiplayer():
  
 def display_board():
     """
-    Create the board for Tic Tac Toe, how it should look like. 
+    Create the board for Tic Tac Toe and the refernce board. 
     """
     print("\nReference board: \n")
     print("|1|2|3|")
@@ -314,4 +317,13 @@ def clear_reset_screen(numlines=100):
         print('\n' * numlines)
    
 
-start_menu()
+def main():
+   """
+   Main functon tat shows the start menu and calls the start game.
+   """
+   start_menu()
+   display_board()
+   play_game()
+
+
+main()

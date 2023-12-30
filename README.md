@@ -143,6 +143,8 @@ This was causing error when the user pushed on any of the options, Below you can
 
 ### Unfixed Bugs
 
+No unfixed bugs.
+
 ## Deployment
 
 ### Heroku Deployment

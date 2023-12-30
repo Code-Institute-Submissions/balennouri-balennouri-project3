@@ -2,18 +2,13 @@ import os
 
 
 # Globals Variables
+
 # Game Board for tic tac toe
 board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
-
-
 # If the game is still playing
 game_is_still_playing = True
-
-
 # Who won? or tie?
 winner = None
-
-
 # Whos turn is it
 current_player = 'X'
 
@@ -114,7 +109,26 @@ def start_the_multiplayer():
          print("\nWrong input. Press 'p to play or 'q' to quit the game!")
          user_choice = input("Choose Again: ")
 
- 
+
+def ask_to_play_again():
+   """
+   Asks the user if they want to play again.
+   """
+   print("You want to play again?")
+   print("'p' to play again")
+   print("'q' to quit the game")
+   last_choice = input("Your Choice: ")
+   while True:
+      if last_choice == "p":
+         main()
+         play_game()
+      elif last_choice == "q":
+         main()
+      else:
+         print("\nWrong input. Press 'p' to play again or 'q' to quit the game.")
+         last_choice = input("Choose Again: ")
+
+
 def display_board():
     """
     Create the board for Tic Tac Toe and the refernce board. 

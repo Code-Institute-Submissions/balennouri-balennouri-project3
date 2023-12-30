@@ -15,12 +15,12 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
     - [User stories](#user-stories)
   - [Features](#features)
     - [Game](#game)
-      - [Screenshots from the game:](#screenshots-from-the-game)
-        - [The welcome page:](#the-welcome-page)
-        - [Single Player page:](#single-player-page)
-        - [Multiplayer Page:](#multiplayer-page)
-        - [Rules for the game:](#rules-for-the-game)
-        - [How the game board looks like:](#how-the-game-board-looks-like)
+      - [Screenshots from the game](#screenshots-from-the-game)
+        - [The welcome page](#the-welcome-page)
+        - [Single Player page](#single-player-page)
+        - [Multiplayer Page](#multiplayer-page)
+        - [Rules for the game](#rules-for-the-game)
+        - [How the game board looks like](#how-the-game-board-looks-like)
     - [Future Feature](#future-feature)
   - [Languages Used](#languages-used)
   - [Technologies Used](#technologies-used)
@@ -64,25 +64,25 @@ As a user of this website:
 
 ### Game
 
-#### Screenshots from the game:
+#### Screenshots from the game
 
-##### The welcome page:
+##### The welcome page
 
 ![start menu](assets/readme/start-menu.png)
 
-##### Single Player page:
+##### Single Player page
 
 ![Single player](assets/readme/single-player-menu.png)
 
-##### Multiplayer Page:
+##### Multiplayer Page
 
 ![Multiplayer](assets/readme/multiplaye-meny.png)
 
-##### Rules for the game:
+##### Rules for the game
 
 ![Rules](assets/readme/rules-meny.png)
 
-##### How the game board looks like:
+##### How the game board looks like
 
 ![Gameboard](assets/readme/play-game.png)
 

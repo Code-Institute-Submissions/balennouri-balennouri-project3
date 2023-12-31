@@ -318,7 +318,8 @@ def flip_player():
 def clear_reset_screen(numlines=100):
     """
     Clears the console to simplify UX and clear visual clutter.
-    numlines is an fallback backup.
+    numlines is an fallback backup. Code taken from
+    http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf
     """
     if os.name == "posix":
         # for OS => Unix / Linux / MacOS / BSD / etc

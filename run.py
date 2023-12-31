@@ -120,7 +120,6 @@ def ask_to_play_again():
    last_choice = input("Your Choice: ")
    while True:
       if last_choice == "p":
-         main()
          play_game()
       elif last_choice == "q":
          main()

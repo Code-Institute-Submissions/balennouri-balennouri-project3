@@ -37,7 +37,7 @@ def start_menu():
          start_the_singleplayer()
       else:
          print("\nWrong input. Press 's' to play singleplayer and 'm' to play mulitplayer.")
-         player_choice = input("Choose Again: ")
+         player_choice = input("Choose Again: \n")
 
 
 def start_the_singleplayer():
@@ -54,7 +54,7 @@ def start_the_singleplayer():
    print("'r' to read the rules")
    print("'m' to play multiplayer")
    print("'q' to go back to the menu\n")
-   choice = input("Your Choice: ")
+   choice = input("Your Choice: \n")
    while True:
       if choice == "r":
          clear_reset_screen()
@@ -72,7 +72,7 @@ def start_the_singleplayer():
          print("'q' to go back to the start menu.\n")
          print("---------------------------------")
          print("---------------------------------\n")
-         choice = input("Choose Again: ")
+         choice = input("Choose Again: \n")
 
 
 def start_the_multiplayer():
@@ -84,17 +84,17 @@ def start_the_multiplayer():
    print("----------------------------")
    print("----------------------------\n")
    print("What's your names?\n")
-   name = input("First Player: ")
+   name = input("First Player: \n")
    print("Welcome " + name + " to the game!")
    print(name + " will play with the 'X'\n")
-   name_2 = input("second Player: ")
+   name_2 = input("second Player: \n")
    print("Welcome " + name_2 + " to the game!")
    print(name_2 + " will play with the 'O'\n")
    print("'p' to play the game")
    print("'r' to read the rules")
    print("'q' To quit the game")
    print("--------------------")
-   user_choice = input("What's your choice: ")
+   user_choice = input("What's your choice: \n")
    while True:
       if user_choice == "r":
          clear_reset_screen()
@@ -107,7 +107,7 @@ def start_the_multiplayer():
          start_menu()
       else:
          print("\nWrong input. Press 'p to play or 'q' to quit the game!")
-         user_choice = input("Choose Again: ")
+         user_choice = input("Choose Again: \n")
 
 
 def ask_to_play_again():
@@ -117,7 +117,7 @@ def ask_to_play_again():
    print("You want to play again?")
    print("'p' to play again")
    print("'q' to quit the game")
-   last_choice = input("Your Choice: ")
+   last_choice = input("Your Choice: \n")
    while True:
       if last_choice == "p":
          play_game()
@@ -125,7 +125,7 @@ def ask_to_play_again():
          main()
       else:
          print("\nWrong input. Press 'p' to play again or 'q' to quit the game.")
-         last_choice = input("Choose Again: ")
+         last_choice = input("Choose Again: \n")
 
 
 def display_board():
@@ -153,7 +153,7 @@ def rules_for_game():
     print("in a row, vertically, horizontally or diagonally.")
     print("")
     print("Now press 'p' to play or 'q' to quit the game!")
-    choice_of_user = input("Your Choice?: ")
+    choice_of_user = input("Your Choice?: \n")
     while True:
       if choice_of_user == "p":
          clear_reset_screen()
@@ -163,7 +163,7 @@ def rules_for_game():
          start_menu()
       else:
          print("Wrong input. Press 'p to play or 'q' to quit the game!")
-         choice_of_user = input("Choose Again: ")
+         choice_of_user = input("Choose Again: \n")
 
        
 def play_game():
@@ -193,13 +193,13 @@ def handle_turn(player):
     to they choose a valid one.
     """
     print("Choose a position from 1-9\n")
-    position = input("It is " + current_player + " turn to choose: ")
+    position = input("It is " + current_player + " turn to choose: \n")
     
     valid = False
     while not valid:
 
       while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
-        position = input("Invalid input please " + current_player + " choose again: ")
+        position = input("Invalid input please " + current_player + " choose again: \n")
 
       position = int(position) - 1
 

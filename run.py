@@ -322,23 +322,20 @@ def clear_reset_screen(numlines=100):
     http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf
     """
     if os.name == "posix":
-        # for OS => Unix / Linux / MacOS / BSD / etc
-        os.system('clear')
+       # for OS => Unix / Linux / MacOS / BSD / etc
+       os.system('clear')
     elif os.name in ("nt", "dos", "ce"):
-        #  for OS => DOS / Windows
-        os.system('CLS')
+       #  for OS => DOS / Windows
+       os.system('CLS')
     else:
-        # Fallback for other operating systems.
-        print('\n' * numlines)
+       # Fallback for other operating systems.
+       print('\n' * numlines)
    
 
 def main():
    """
-   Main functon tat shows the start menu and calls the start game.
+   Main functon that shows the start menu and calls the start game.
    """
    start_menu()
-   display_board()
-   play_game()
-
 
 main()

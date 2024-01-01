@@ -253,6 +253,7 @@ def main():
        last_choice = input("Your Choice: \n")
        while True:
          if last_choice == "p":
+            clear_reset_screen()
             play_game()
          elif last_choice == "q":
             clear_reset_screen()

@@ -16,9 +16,6 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
   - [Features](#features)
     - [Game](#game)
       - [Screenshots from the game](#screenshots-from-the-game)
-        - [The welcome page](#the-welcome-page)
-        - [Single Player page](#single-player-page)
-        - [Multiplayer Page](#multiplayer-page)
         - [Rules for the game](#rules-for-the-game)
         - [How the game board looks like](#how-the-game-board-looks-like)
     - [Future Feature](#future-feature)
@@ -65,16 +62,6 @@ As a user of this website:
 ### Game
 
 #### Screenshots from the game
-
-##### The welcome page
-
-![start menu](assets/readme/start-menu.png)
-
-##### Single Player page
-
-![Single player](assets/readme/single-player-menu.png)
-
-##### Multiplayer Page
 
 ![Multiplayer](assets/readme/multiplaye-meny.png)
 

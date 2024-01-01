@@ -1,199 +1,340 @@
-
-# Function to print Tic Tac Toe
-def print_tic_tac_toe(BOARD):
-	"""
-	Create the board for Tic Tac Toe and the refernce board.
-	"""
-	print("\nReference board: \n")
-	print("|1|2|3|")
-	print("|4|5|6|")
-	print("|7|8|9| \n")
-	
-	print("\n")
-	print("\t     |     |")
-	print("\t  {}  |  {}  |  {}".format(BOARD[0], BOARD[1], BOARD[2]))
-	print('\t_____|_____|_____')
-
-	print("\t     |     |")
-	print("\t  {}  |  {}  |  {}".format(BOARD[3], BOARD[4], BOARD[5]))
-	print('\t_____|_____|_____')
-
-	print("\t     |     |")
-
-	print("\t  {}  |  {}  |  {}".format(BOARD[6], BOARD[7], BOARD[8]))
-	print("\t     |     |")
-	print("\n")
+import os
 
 
-# Function to print the score-board
-def scoreboard_print(score_board):
-	"""
-	Print the scoreboard for the game.
+# Globals Variables
+
+# Game Board for tic tac toe
+board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+# If the game is still playing
+game_is_still_playing = True
+# Who won? or tie?
+winner = None
+# Whos turn is it
+current_player = 'X'
+
+
+def start_menu():
    """
-	print("\t--------------------------------")
-	print("\t       	   SCOREBOARD       ")
-	print("\t--------------------------------")
+   This menu comes when user come in to the game.
+   The user will have two options, to play single player or multiplayer.
+   User will notice that the singleplayer mode is not ready when user push on it,
+   it will give a print message and inform the user.
+   """
+   clear_reset_screen()
+   print("\nWelcome to the Tic Tac Toe game\n")
+   print("You want to play single player or multiplayer?\n")
+   print("------------------------------------------------")
+   print("------------------------------------------------\n")
+   print("'s' To play single player")
+   print("'m' To play multiplayer")
+   player_choice = input("What's your choice: ")
+   while True:
+      if player_choice == "m":
+         clear_reset_screen()
+         start_the_multiplayer()
+      elif player_choice == "s":
+         clear_reset_screen()
+         start_the_singleplayer()
+      else:
+         print("\nWrong input. Press 's' to play singleplayer and 'm' to play mulitplayer.")
+         player_choice = input("Choose Again: \n")
 
-	players = list(score_board.keys())
-	print("\t   ", players[0], "\t    ", score_board[players[0]])
-	print("\t   ", players[1], "\t    ", score_board[players[1]])
 
-	print("\t--------------------------------\n")
+def start_the_singleplayer():
+   """
+   Welcome the user to the singleplayer mode.
+   """
+   clear_reset_screen()
+   print("\nWelcome to the single player")
+   print("\n----------------------------")
+   print("------------------------------\n")
+   print("We are sorry the single player mode are not ready yet!")
+   print("\n------------------------------------------------------")
+   print("------------------------------------------------------\n")
+   print("'r' to read the rules")
+   print("'m' to play multiplayer")
+   print("'q' to go back to the menu\n")
+   choice = input("Your Choice: \n")
+   while True:
+      if choice == "r":
+         clear_reset_screen()
+         rules_for_game()
+      elif choice == "q":
+         clear_reset_screen()
+         start_menu()
+      elif choice == "m":
+         clear_reset_screen()
+         start_the_multiplayer()
+      else:
+         print("Wrong input.")
+         print("Press 'r' to read the rules")
+         print("'m' to play multiplayer.")
+         print("'q' to go back to the start menu.\n")
+         print("---------------------------------")
+         print("---------------------------------\n")
+         choice = input("Choose Again: \n")
 
-# Function to check if any player has won
-def check_win(player_position, current_player):
 
-	# All possible winning combinations
-	soln = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
+def start_the_multiplayer():
+   """
+   Give the user the multiplayer menu, for start the game or quit.
+   """
+   clear_reset_screen()
+   print("\nWelcome to the multiplayer")
+   print("----------------------------")
+   print("----------------------------\n")
+   print("What's your names?\n")
+   name = input("First Player: \n")
+   print("Welcome " + name + " to the game!")
+   print(name + " will play with the 'X'\n")
+   name_2 = input("second Player: \n")
+   print("Welcome " + name_2 + " to the game!")
+   print(name_2 + " will play with the 'O'\n")
+   print("'p' to play the game")
+   print("'r' to read the rules")
+   print("'q' To quit the game")
+   print("--------------------")
+   user_choice = input("What's your choice: \n")
+   while True:
+      if user_choice == "r":
+         clear_reset_screen()
+         rules_for_game()
+      elif user_choice == "p":
+         clear_reset_screen()
+         play_game()
+      elif user_choice == "q":
+         clear_reset_screen()
+         start_menu()
+      else:
+         print("\nWrong input. Press 'p to play or 'q' to quit the game!")
+         user_choice = input("Choose Again: \n")
 
-	# Loop to check if any winning combination is satisfied
-	for x in soln:
-		if all(y in player_position[current_player] for y in x):
 
-			# Return True if any winning combination satisfies
-			return True
-	# Return False if no combination is satisfied		
-	return False		
+def ask_to_play_again():
+   """
+   Asks the user if they want to play again.
+   """
+   print("You want to play again?")
+   print("'p' to play again")
+   print("'q' to quit the game")
+   last_choice = input("Your Choice: \n")
+   while True:
+      if last_choice == "p":
+         play_game()
+      elif last_choice == "q":
+         main()
+      else:
+         print("\nWrong input. Press 'p' to play again or 'q' to quit the game.")
+         last_choice = input("Choose Again: \n")
 
-# Function to check if the game is drawn
-def check_draw(player_position):
-	if len(player_position['X']) + len(player_position['O']) == 9:
-		return True
-	return False		
 
-# Function for a single game of Tic Tac Toe
-def single_game(current_player):
+def display_board():
+    """
+    Create the board for Tic Tac Toe and the refernce board. 
+    """
+    print("\nReference board: \n")
+    print("|1|2|3|")
+    print("|4|5|6|")
+    print("|7|8|9| \n")
+    print(board[0] + " | " + board[1] + " | " + board[2])
+    print(board[3] + " | " + board[4] + " | " + board[5])
+    print(board[6] + " | " + board[7] + " | " + board[8])
 
-	# Represents the Tic Tac Toe
-	BOARD = [' ' for x in range(9)]
-	
-	# Stores the positions occupied by X and O
-	player_position = {'X':[], 'O':[]}
-	
-	# Game Loop for a single game of Tic Tac Toe
-	while True:
-		print_tic_tac_toe(BOARD)
-		
-		# Try exception block for MOVE input
-		try:
-			print("Player ", current_player, " turn. Which box? : ", end="")
-			move = int(input())	
-		except ValueError:
-			print("Wrong Input!!! Try Again")
-			continue
 
-		# Sanity check for MOVE inout
-		if move < 1 or move > 9:
-			print("Wrong Input!!! Try Again")
-			continue
+def rules_for_game():
+    """
+    Explain the game and the rules.
+    """
+    print("")
+    print("Tic-tac-toe is a game in which two players take turns in drawing")
+    print("either an 'O' or an 'X' in one square of a grid")
+    print("consisting of nine squares.")
+    print("The winner is the first player to get three of the same symbols")
+    print("in a row, vertically, horizontally or diagonally.")
+    print("")
+    print("Now press 'p' to play or 'q' to quit the game!")
+    choice_of_user = input("Your Choice?: \n")
+    while True:
+      if choice_of_user == "p":
+         clear_reset_screen()
+         play_game()
+      elif choice_of_user == "q":
+         clear_reset_screen()
+         start_menu()
+      else:
+         print("Wrong input. Press 'p to play or 'q' to quit the game!")
+         choice_of_user = input("Choose Again: \n")
 
-		# Check if the box is not occupied already
-		if BOARD[move-1] != ' ':
-			print("Place already filled. Try again!!")
-			continue
+       
+def play_game():
+    """
+    Play game displays the board, handles the turns,
+    flips the turn to the other player and check if the game has ended.
+    """
+    display_board()
 
-		# Update game information
+    while game_is_still_playing:
+     handle_turn(current_player)
+     check_if_game_over()
+     flip_player()
 
-		# Updating grid status 
-		BOARD[move-1] = current_player
+    if winner == "X" or winner == "O":
+       print(winner + " Has won the game.\n")
+    elif winner == None:
+       print("It was a draw!\n")
 
-		# Updating player positions
-		player_position[current_player].append(move)
 
-		# Function call for checking win
-		if check_win(player_position, current_player):
-			print_tic_tac_toe(BOARD)
-			print("Player ", current_player, " has won the game!!")		
-			print("\n")
-			return current_player
+def handle_turn(player):
+    """
+    Handles the turn and put the markers for each player.
+    Tells the users who's turn it's.
+    don't let the players use a invalid input.
+    with while loop it checks the users input if it inavlid or correct or it will loop
+    to they choose a valid one.
+    """
+    print("Choose a position from 1-9\n")
+    position = input("It is " + current_player + " turn to choose: \n")
+    
+    valid = False
+    while not valid:
 
-		# Function call for checking draw game
-		if check_draw(player_position):
-			print_tic_tac_toe(BOARD)
-			print("Game Drawn")
-			print("\n")
-			return 'D'
+      while position not in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+        position = input("Invalid input please " + current_player + " choose again: \n")
 
-		# Switch player moves
-		if current_player == 'X':
-			current_player = 'O'
-		else:
-			current_player = 'X'
+      position = int(position) - 1
 
-if __name__ == "__main__":
+      if board[position] == "-":
+        valid = True
+      else:
+        print("That position is already taken. Go again.\n")
 
-	print("Player 1")
-	player1 = input("Enter the name : ")
-	print("\n")
+    board[position] = player
 
-	print("Player 2")
-	player2 = input("Enter the name : ")
-	print("\n")
-	
-	# Stores the player who chooses X and O
-	current_player = player1
+    display_board()
 
-	# Stores the choice of players
-	player_choice = {'X' : "", 'O' : ""}
+    
+def check_if_game_over():
+   check_for_win()
+   check_if_tie()
 
-	# Stores the options
-	options = ['X', 'O']
 
-	# Stores the scoreboard
-	score_board = {player1: 0, player2: 0}
-	scoreboard_print(score_board)
+def check_for_win():
+   """
+   Check for possible wins.
+   """
+   global winner
+   row_winner = check_rows()
+   columns_winner = check_columns()
+   diagonals_winner = check_diagonals()
+   if row_winner:
+      winner = row_winner
+   elif columns_winner:
+      winner = columns_winner
+   elif diagonals_winner:
+      winner = diagonals_winner
+   else:
+      winner = None
+   return
+      
 
-	# Game Loop for a series of Tic Tac Toe
-	# The loop runs until the players quit 
-	while True:
+def check_rows():
+   """
+   This checks if any of the rows have all the same value of X or O.
+   If it have the same it will return the winner.
+   """
+   global game_is_still_playing
+   row_1 = board[0] == board[1] == board[2] != "-"
+   row_2 = board[3] == board[4] == board[5] != "-"
+   row_3 = board[6] == board[7] == board[8] != "-"
+   if row_1 or row_2 or row_3:
+      game_is_still_playing = False
+   if row_1:
+      return board[0]
+   elif row_2:
+      return board[3]
+   elif row_3:
+      return board[6]
+   return
+   
+   
+def check_columns():
+   """
+   This checks if any of the columns have all the same value of X or O.
+   If it have the same it will return the winner.
+   """
+   global game_is_still_playing
+   columns_1 = board[0] == board[3] == board[6] != "-"
+   columns_2 = board[1] == board[4] == board[7] != "-"
+   columns_3 = board[2] == board[5] == board[8] != "-"
+   if columns_1 or columns_2 or columns_3:
+      game_is_still_playing = False
+   if columns_1:
+      return board[0]
+   elif columns_2:
+      return board[1]
+   elif columns_3:
+      return board[2]
+   return
 
-		# Player choice Menu
-		print("Turn to choose for", current_player)
-		print("Enter 1 for X")
-		print("Enter 2 for O")
-		print("Enter 3 to Quit")
+       
+def check_diagonals():
+   """
+   This checks if any of the diagonals have all the same value of X or O.
+   If it have the same it will return the winner.
+   """
+   global game_is_still_playing
+   diagonals_1 = board[0] == board[4] == board[8] != "-"
+   diagonals_2 = board[6] == board[4] == board[2] != "-"
+   if diagonals_1 or diagonals_2:
+      game_is_still_playing = False
+   if diagonals_1:
+      return board[0]
+   elif diagonals_2:
+      return board[6]
+   return
 
-		# Try exception for CHOICE input
-		try:
-			choice = int(input())	
-		except ValueError:
-			print("Wrong Input!!! Try Again\n")
-			continue
 
-		# Conditions for player choice	
-		if choice == 1:
-			player_choice['X'] = current_player
-			if current_player == player1:
-				player_choice['O'] = player2
-			else:
-				player_choice['O'] = player1
+def check_if_tie():
+   global game_is_still_playing
+   if "-" not in board:
+      game_is_still_playing = False
+   return
 
-		elif choice == 2:
-			player_choice['O'] = current_player
-			if current_player == player1:
-				player_choice['X'] = player2
-			else:
-				player_choice['X'] = player1
-		
-		elif choice == 3:
-			print("Final Scores")
-			scoreboard_print(score_board)
-			break	
 
-		else:
-			print("Wrong Choice!!!! Try Again\n")
+def flip_player():
+   """
+   Change the players if current player is X
+   then change it to O.
+   """
+   global current_player
+   if current_player == "X":
+      current_player = "O"
+   elif current_player == "O":
+      current_player = "X"
+   return
 
-		# Stores the winner in a single game of Tic Tac Toe
-		winner = single_game(options[choice-1])
-		
-		# Edits the scoreboard according to the winner
-		if winner != 'D' :
-			player_won = player_choice[winner]
-			score_board[player_won] = score_board[player_won] + 1
 
-		scoreboard_print(score_board)
-		# Switch player who chooses X or O
-		if current_player == player1:
-			current_player = player2
-		else:
-			current_player = player1
+def clear_reset_screen(numlines=100):
+    """
+    Clears the console to simplify UX and clear visual clutter.
+    numlines is an fallback backup. Code taken from
+    http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf
+    """
+    if os.name == "posix":
+       # for OS => Unix / Linux / MacOS / BSD / etc
+       os.system('clear')
+    elif os.name in ("nt", "dos", "ce"):
+       #  for OS => DOS / Windows
+       os.system('CLS')
+    else:
+       # Fallback for other operating systems.
+       print('\n' * numlines)
+   
+
+def main():
+   """
+   Main functon that shows the start menu and calls the start game.
+   """
+   start_menu()
+
+main()

@@ -13,121 +13,6 @@ winner = None
 current_player = 'X'
 
 
-def start_menu():
-   """
-   This menu comes when user come in to the game.
-   The user will have two options, to play single player or multiplayer.
-   User will notice that the singleplayer mode is not ready when user push on it,
-   it will give a print message and inform the user.
-   """
-   clear_reset_screen()
-   print("\nWelcome to the Tic Tac Toe game\n")
-   print("You want to play single player or multiplayer?\n")
-   print("------------------------------------------------")
-   print("------------------------------------------------\n")
-   print("'s' To play single player")
-   print("'m' To play multiplayer")
-   player_choice = input("What's your choice: ")
-   while True:
-      if player_choice == "m":
-         clear_reset_screen()
-         start_the_multiplayer()
-      elif player_choice == "s":
-         clear_reset_screen()
-         start_the_singleplayer()
-      else:
-         print("\nWrong input. Press 's' to play singleplayer and 'm' to play mulitplayer.")
-         player_choice = input("Choose Again: \n")
-
-
-def start_the_singleplayer():
-   """
-   Welcome the user to the singleplayer mode.
-   """
-   clear_reset_screen()
-   print("\nWelcome to the single player")
-   print("\n----------------------------")
-   print("------------------------------\n")
-   print("We are sorry the single player mode are not ready yet!")
-   print("\n------------------------------------------------------")
-   print("------------------------------------------------------\n")
-   print("'r' to read the rules")
-   print("'m' to play multiplayer")
-   print("'q' to go back to the menu\n")
-   choice = input("Your Choice: \n")
-   while True:
-      if choice == "r":
-         clear_reset_screen()
-         rules_for_game()
-      elif choice == "q":
-         clear_reset_screen()
-         start_menu()
-      elif choice == "m":
-         clear_reset_screen()
-         start_the_multiplayer()
-      else:
-         print("Wrong input.")
-         print("Press 'r' to read the rules")
-         print("'m' to play multiplayer.")
-         print("'q' to go back to the start menu.\n")
-         print("---------------------------------")
-         print("---------------------------------\n")
-         choice = input("Choose Again: \n")
-
-
-def start_the_multiplayer():
-   """
-   Give the user the multiplayer menu, for start the game or quit.
-   """
-   clear_reset_screen()
-   print("\nWelcome to the multiplayer")
-   print("----------------------------")
-   print("----------------------------\n")
-   print("What's your names?\n")
-   name = input("First Player: \n")
-   print("Welcome " + name + " to the game!")
-   print(name + " will play with the 'X'\n")
-   name_2 = input("second Player: \n")
-   print("Welcome " + name_2 + " to the game!")
-   print(name_2 + " will play with the 'O'\n")
-   print("'p' to play the game")
-   print("'r' to read the rules")
-   print("'q' To quit the game")
-   print("--------------------")
-   user_choice = input("What's your choice: \n")
-   while True:
-      if user_choice == "r":
-         clear_reset_screen()
-         rules_for_game()
-      elif user_choice == "p":
-         clear_reset_screen()
-         play_game()
-      elif user_choice == "q":
-         clear_reset_screen()
-         start_menu()
-      else:
-         print("\nWrong input. Press 'p to play or 'q' to quit the game!")
-         user_choice = input("Choose Again: \n")
-
-
-def ask_to_play_again():
-   """
-   Asks the user if they want to play again.
-   """
-   print("You want to play again?")
-   print("'p' to play again")
-   print("'q' to quit the game")
-   last_choice = input("Your Choice: \n")
-   while True:
-      if last_choice == "p":
-         play_game()
-      elif last_choice == "q":
-         main()
-      else:
-         print("\nWrong input. Press 'p' to play again or 'q' to quit the game.")
-         last_choice = input("Choose Again: \n")
-
-
 def display_board():
     """
     Create the board for Tic Tac Toe and the refernce board. 
@@ -141,31 +26,6 @@ def display_board():
     print(board[6] + " | " + board[7] + " | " + board[8])
 
 
-def rules_for_game():
-    """
-    Explain the game and the rules.
-    """
-    print("")
-    print("Tic-tac-toe is a game in which two players take turns in drawing")
-    print("either an 'O' or an 'X' in one square of a grid")
-    print("consisting of nine squares.")
-    print("The winner is the first player to get three of the same symbols")
-    print("in a row, vertically, horizontally or diagonally.")
-    print("")
-    print("Now press 'p' to play or 'q' to quit the game!")
-    choice_of_user = input("Your Choice?: \n")
-    while True:
-      if choice_of_user == "p":
-         clear_reset_screen()
-         play_game()
-      elif choice_of_user == "q":
-         clear_reset_screen()
-         start_menu()
-      else:
-         print("Wrong input. Press 'p to play or 'q' to quit the game!")
-         choice_of_user = input("Choose Again: \n")
-
-       
 def play_game():
     """
     Play game displays the board, handles the turns,
@@ -314,6 +174,31 @@ def flip_player():
    return
 
 
+def rules_for_game():
+    """
+    Explain the game and the rules.
+    """
+    print("")
+    print("Tic-tac-toe is a game in which two players take turns in drawing")
+    print("either an 'O' or an 'X' in one square of a grid")
+    print("consisting of nine squares.")
+    print("The winner is the first player to get three of the same symbols")
+    print("in a row, vertically, horizontally or diagonally.")
+    print("")
+    print("Now press 'p' to play or 'q' to quit the game!")
+    choice_of_user = input("Your Choice?: \n")
+    while True:
+      if choice_of_user == "p":
+         clear_reset_screen()
+         play_game()
+      elif choice_of_user == "q":
+         clear_reset_screen()
+         main()
+      else:
+         print("Wrong input. Press 'p to play or 'q' to quit the game!")
+         choice_of_user = input("Choose Again: \n")
+
+
 def clear_reset_screen(numlines=100):
     """
     Clears the console to simplify UX and clear visual clutter.
@@ -334,7 +219,49 @@ def clear_reset_screen(numlines=100):
 def main():
    """
    Main functon that shows the start menu and calls the start game.
+   Give the user the multiplayer menu, for start the game or quit.
    """
-   start_menu()
+   clear_reset_screen()
+   print("\nWelcome to the multiplayer")
+   print("----------------------------")
+   print("----------------------------\n")
+   print("What's your names?\n")
+   name = input("First Player: \n")
+   print("Welcome " + name + " to the game!")
+   print(name + " will play with the 'X'\n")
+   name_2 = input("second Player: \n")
+   print("Welcome " + name_2 + " to the game!")
+   print(name_2 + " will play with the 'O'\n")
+
+   print("'p' to play the game")
+   print("'r' to read the rules")
+   print("'q' To quit the game")
+   print("--------------------")
+   user_choice = input("What's your choice: \n")
+
+   # Give the user option to play,read rules or quit.
+   while True:
+      if user_choice == "r":
+       clear_reset_screen()
+       rules_for_game()
+      elif user_choice == "p":
+       clear_reset_screen()
+       play_game()
+       print("You want to play again?")
+       print("'p' to play again")
+       print("'q' to quit the game")
+       last_choice = input("Your Choice: \n")
+       while True:
+         if last_choice == "p":
+            play_game()
+         elif last_choice == "q":
+            clear_reset_screen()
+            main()
+         else:
+            print("\nWrong input. Press 'p' to play again or 'q' to quit the game.")
+            last_choice = input("Choose Again: \n")
+      else:
+         print("\nWrong input. Press 'p' to play or 'q' to quit the game.")
+         user_choice = input("Choose Again: \n")
 
 main()

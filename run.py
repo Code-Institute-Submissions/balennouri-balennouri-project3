@@ -1,4 +1,5 @@
 import os
+import pyfiglet
 
 
 # Globals Variables
@@ -223,8 +224,8 @@ def main():
    """
    clear_reset_screen()
    print("\nWelcome to the multiplayer")
-   print("----------------------------")
-   print("----------------------------\n")
+   print("---------------------------")
+   print("---------------------------\n")
    print("What's your names?\n")
    name = input("First Player: \n")
    print("Welcome " + name + " to the game!")

@@ -1,4 +1,4 @@
-# Balen Nouri Tic-Tac-Toe For 2 Players
+# Balen Nouri Tic-Tac-Toe Mulitplayer
 
 Three in a row or tic tac toe, everyone has played this game, maybe in school with paper and pen or on a real board.  For those who don’t know about the game, it’s a classic old game with 3 x 3 boxes for two players. One will play with the X and the other one with the O and the one who gets three in a row will win. So, if you and your friend want to challenge each other and wake up old memories from the classic game, click on the link below.
 
@@ -8,16 +8,13 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
 
 ## Table of Contents
 
-- [Balen Nouri Tic-Tac-Toe For 2 Players](#balen-nouri-tic-tac-toe-for-2-players)
+- [Balen Nouri Tic-Tac-Toe Mulitplayer](#balen-nouri-tic-tac-toe-mulitplayer)
   - [Table of Contents](#table-of-contents)
   - [User Experience Design](#user-experience-design)
     - [User Demographic](#user-demographic)
     - [User stories](#user-stories)
   - [Features](#features)
     - [Game](#game)
-      - [Screenshots from the game](#screenshots-from-the-game)
-        - [Rules for the game](#rules-for-the-game)
-        - [How the game board looks like](#how-the-game-board-looks-like)
     - [Future Feature](#future-feature)
   - [Languages Used](#languages-used)
   - [Technologies Used](#technologies-used)
@@ -61,19 +58,23 @@ As a user of this website:
 
 ### Game
 
-#### Screenshots from the game
+Screenshots from the game:
 
 ![Multiplayer](assets/readme/multiplaye-meny.png)
 
-##### Rules for the game
+Rules for the game:
 
 ![Rules](assets/readme/rules-meny.png)
 
-##### How the game board looks like
+How the game board looks like:
 
 ![Gameboard](assets/readme/play-game.png)
 
 ![Gameboard 2](assets/readme/gameboard-two.png)
+
+When the game is done:
+
+![Play Again](assets/readme/play_again..png)
 
 ### Future Feature
 
@@ -159,6 +160,7 @@ To deploy this page to Heroku from its GitHub repository the following steps wer
 
 - The screenshot at the top of the ReadMe was built from [Ami Responsive.](https://ui.dev/amiresponsive)
 - The information about the game in the readme is taken from [wikipedia.](https://sv.wikipedia.org/wiki/Tre_i_rad)
+- The code for clear_reset_screen() function was taken from [Coding4you.](http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf)
 
 ## Acknowledgements
 

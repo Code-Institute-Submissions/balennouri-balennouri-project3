@@ -220,10 +220,10 @@ def rules_for_game():
     print("Now press 'p' to play or 'q' to quit the game!")
     choice_of_user = input("Your Choice?: \n")
     while True:
-        if choice_of_user == "p":
+        if choice_of_user.lower() == "p":
             clear_reset_screen()
             play_game()
-        elif choice_of_user == "q":
+        elif choice_of_user.lower() == "q":
             clear_reset_screen()
             main()
         else:

@@ -55,8 +55,6 @@ As a user of this website:
 
 ## How To Play
 
-
-
 ## Features
 
 - The game is easy to play and doesn’t need any special configurations.
@@ -98,7 +96,7 @@ Features to be added in the future:
 
 A flowchart describing the logic behind this application has been created using [Lucidchart.](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier2_mixed_search_brand_exact_&km_CPC_CampaignId=1520850463&km_CPC_AdGroupID=57697288545&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433237648&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=21003&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuS-QAiBPSXj3yOMy75khyNm4_a4nkKCQMtc0JOHhSl6XZthZn-xZxoaAioqEALw_wcB) It served as a guideline when the actual game was coded.
 
-![Lucid Chart](assets/readme/lucid-chart-pic.png)
+![Lucid Chart](assets/readme/lucid-chart-2.png)
 
 ## Languages Used
 

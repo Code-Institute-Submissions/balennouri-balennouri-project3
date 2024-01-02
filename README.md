@@ -16,6 +16,7 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
   - [Features](#features)
     - [Game](#game)
     - [Future Feature](#future-feature)
+  - [Flowchart](#flowchart)
   - [Languages Used](#languages-used)
   - [Technologies Used](#technologies-used)
   - [Libraries used](#libraries-used)
@@ -84,6 +85,12 @@ Features to be added in the future:
 - Be able to see scoreboard.
 - Be able to choose an own sign instead of X or O.
 - Put in some color to the game.
+
+## Flowchart
+
+A flowchart describing the logic behind this application has been created using [Lucidchart.](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier2_mixed_search_brand_exact_&km_CPC_CampaignId=1520850463&km_CPC_AdGroupID=57697288545&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433237648&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=21003&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuS-QAiBPSXj3yOMy75khyNm4_a4nkKCQMtc0JOHhSl6XZthZn-xZxoaAioqEALw_wcB) It served as a guideline when the actual game was coded.
+
+![Lucid Chart](assets/readme/lucid-chart-pic.png)
 
 ## Languages Used
 
@@ -160,6 +167,7 @@ To deploy this page to Heroku from its GitHub repository the following steps wer
 
 - The screenshot at the top of the ReadMe was built from [Ami Responsive.](https://ui.dev/amiresponsive)
 - The information about the game in the readme is taken from [wikipedia.](https://sv.wikipedia.org/wiki/Tre_i_rad)
+- The flowchart in readme was made by [Lucidchart.](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier2_mixed_search_brand_exact_&km_CPC_CampaignId=1520850463&km_CPC_AdGroupID=57697288545&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433237648&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=21003&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuS-QAiBPSXj3yOMy75khyNm4_a4nkKCQMtc0JOHhSl6XZthZn-xZxoaAioqEALw_wcB)
 - The code for clear_reset_screen() function was taken from [Coding4you.](http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf)
 
 ## Acknowledgements

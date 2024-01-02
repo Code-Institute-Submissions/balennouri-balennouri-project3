@@ -13,9 +13,11 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
   - [User Experience Design](#user-experience-design)
     - [User Demographic](#user-demographic)
     - [User stories](#user-stories)
+  - [How To Play](#how-to-play)
   - [Features](#features)
     - [Game](#game)
     - [Future Feature](#future-feature)
+  - [Data Model](#data-model)
   - [Flowchart](#flowchart)
   - [Languages Used](#languages-used)
   - [Technologies Used](#technologies-used)
@@ -51,6 +53,10 @@ As a user of this website:
 - Be able to read the rules and the meaning of the game.
 - Be able to play again or quit the game when the game is finished.
 
+## How To Play
+
+
+
 ## Features
 
 - The game is easy to play and doesn’t need any special configurations.
@@ -85,6 +91,8 @@ Features to be added in the future:
 - Be able to see scoreboard.
 - Be able to choose an own sign instead of X or O.
 - Put in some color to the game.
+
+## Data Model
 
 ## Flowchart
 

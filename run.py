@@ -31,18 +31,47 @@ def play_game():
     """
     Play game displays the board, handles the turns,
     flips the turn to the other player and check if the game has ended.
+    Ask the users if they want to play again.
     """
-    display_board()
+    while True:
+        display_board()
+        while game_is_still_playing:
+            handle_turn(current_player)
+            check_if_game_over()
+            flip_player()
+         # give the user who have won and if they want to play again.
+        if winner == "X" or winner == "O":
+            print(winner + " Has won the game.\n")
+            print("Play Again?")
+            print("'p' To play again")
+            print("'q' To go back to the menu")
+        elif winner is None:
+            print("It was a draw!\n")
+            print("Play Again?")
+            print("'p' To play again")
+            print("'q' To go back to the menu")
+        play_again = input("Your Choice: \n")
+        if play_again.lower() == "p":
+            clear_reset_screen()
+            reset_game()
+        elif play_again.lower() == "q":
+            clear_reset_screen()
+            reset_game()
+            main()   
+        else:
+           print("Wrong input choose again!")
+           play_again = input("Your Choise: \n")
 
-    while game_is_still_playing:
-     handle_turn(current_player)
-     check_if_game_over()
-     flip_player()
 
-    if winner == "X" or winner == "O":
-       print(winner + " Has won the game.\n")
-    elif winner == None:
-       print("It was a draw!\n")
+def reset_game():
+    """
+    Reset the game variables to start a new game.
+    """
+    global board, game_is_still_playing, winner, current_player
+    board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+    game_is_still_playing = True
+    winner = None
+    current_player = 'X'
 
 
 def handle_turn(player):
@@ -75,6 +104,9 @@ def handle_turn(player):
 
     
 def check_if_game_over():
+   """
+   Checks if the game is over.
+   """
    check_for_win()
    check_if_tie()
 
@@ -248,20 +280,6 @@ def main():
       elif user_choice == "p":
        clear_reset_screen()
        play_game()
-       print("You want to play again?")
-       print("'p' to play again")
-       print("'q' to quit the game")
-       last_choice = input("Your Choice: \n")
-       while True:
-         if last_choice == "p":
-            clear_reset_screen()
-            play_game()
-         elif last_choice == "q":
-            clear_reset_screen()
-            main()
-         else:
-            print("\nWrong input. Press 'p' to play again or 'q' to quit the game.")
-            last_choice = input("Choose Again: \n")
       else:
          print("\nWrong input. Press 'p' to play or 'q' to quit the game.")
          user_choice = input("Choose Again: \n")

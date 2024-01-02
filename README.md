@@ -2,7 +2,7 @@
 
 Three in a row or tic tac toe, everyone has played this game, maybe in school with paper and pen or on a real board.  For those who don’t know about the game, it’s a classic old game with 3 x 3 boxes for two players. One will play with the X and the other one with the O and the one who gets three in a row will win. So, if you and your friend want to challenge each other and wake up old memories from the classic game, click on the link below.
 
-[A live version of the website and the project can be accessed here:]()
+[A live version of the website and the project can be accessed here:](https://balen-nouri-tic-tac-toe-5377b5105884.herokuapp.com/)
 
 ![Ami Responsive]()
 

@@ -258,30 +258,39 @@ def main():
     print("---------------------------")
     print("---------------------------\n")
     print("What's your names?\n")
-    name = input("First Player: \n")
-    print("Welcome " + name + " to the game!")
-    print(name + " will play with the 'X'\n")
-    name_2 = input("second Player: \n")
-    print("Welcome " + name_2 + " to the game!")
-    print(name_2 + " will play with the 'O'\n")
-
-    print("'p' to play the game")
-    print("'r' to read the rules")
-    print("'q' To quit the game")
-    print("--------------------")
-    user_choice = input("What's your choice: \n")
-
-    # Give the user option to play,read rules or quit.
     while True:
-        if user_choice.lower() == "r":
-            clear_reset_screen()
-            rules_for_game()
-        elif user_choice.lower() == "p":
-            clear_reset_screen()
-            play_game()
+        name = input("First Player: \n")
+        if name.strip() == "":
+            print("You need to choose a name")
         else:
-            print("\nWrong input. Press 'p' to play or 'q' to quit the game.")
-            user_choice = input("Choose Again: \n")
+            print("Welcome " + name + " to the game!")
+            print(name + " will play with the 'X'\n")
+            while True:
+                name_2 = input("second Player: \n")
+                if name_2.strip() == "":
+                    print("You need to choose a name")
+                else:
+                    print("Welcome " + name_2 + " to the game!")
+                    print(name_2 + " will play with the 'O'\n")
+                    print("'p' to play the game")
+                    print("'r' to read the rules")
+                    print("'q' To quit the game")
+                    print("--------------------")
+                    user_choice = input("What's your choice: \n")
+                    # Give the user option to play,read rules or quit.
+                    while True:
+                        if user_choice.lower() == "r":
+                            clear_reset_screen()
+                            rules_for_game()
+                        elif user_choice.lower() == "p":
+                            clear_reset_screen()
+                            play_game()
+                        else:
+                            print(
+                                "\nWrong input. Press 'p' to play or 'q'\
+                                      to quit the game."
+                            )
+                            user_choice = input("Choose Again: \n")
 
 
 main()

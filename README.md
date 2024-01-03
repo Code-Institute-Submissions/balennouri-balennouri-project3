@@ -55,7 +55,7 @@ As a user of this website:
 
 ## How To Play
 
-Skriv hur man spelar
+    Tic-tac-toe is a game in which two players take turns in drawing, either an 'O' or an 'X' in one square of a grid, consisting of nine squares. The winner is the first player to get three of the same symbols in a row, vertically, horizontally or diagonally.
 
 ## Features
 
@@ -103,6 +103,12 @@ Features to be added in the future:
 - Put in some color to the game.
 
 ## Data Model
+
+I choose to use global variables for the game and different functions that give the users the ability to play the game and be able to choose different options throughout the game.
+
+Some important function is the display_board() shows how the game board will look, the have the play_game() that make the game playable.
+
+All of the functions later go through the main() function, so the users can start a new match or quit the game.
 
 ## Flowchart
 

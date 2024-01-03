@@ -55,6 +55,8 @@ As a user of this website:
 
 ## How To Play
 
+Skriv hur man spelar
+
 ## Features
 
 - The game is easy to play and doesn’t need any special configurations.
@@ -65,19 +67,29 @@ As a user of this website:
 
 Screenshots from the game:
 
+- Welcome page for the users(start menu).
+- Asks both of the users for their names.
+- Asks the users if they want to play, read the rules or quit the game.
+
 ![Multiplayer](assets/readme/multiplaye-meny.png)
 
 Rules for the game:
+
+- Explain the game and the rules for Tic Tac Toe.
 
 ![Rules](assets/readme/rules-meny.png)
 
 How the game board looks like:
 
+- In the game, users get a reference board and the game board.
+- When the first player chooses a spot, the terminal clears everything and shows the first player's move.
+- When the second player chooses a spot, the terminal clears everything as well and then shows the new board.
+
 ![Gameboard](assets/readme/play-game.png)
 
-![Gameboard 2](assets/readme/gameboard-two.png)
-
 When the game is done:
+
+- When the game is done, whether it's a draw or a winner. The users get asked if they want to play again.
 
 ![Play Again](assets/readme/play_again..png)
 

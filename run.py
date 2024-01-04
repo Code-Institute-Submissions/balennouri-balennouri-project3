@@ -256,6 +256,13 @@ def main():
     clear_reset_screen()
     print("\nWelcome to the multiplayer")
     print("---------------------------")
+    print("""   _____   _____   _____ 
+  |_   _| |_   _| |_   _|
+    | |_____| |_____| |  
+    | |_____| |_____| |  
+    |_|     |_|     |_|  """)
+    print("---------------------------")
+    print("        Tic-Tac-Toe         ")
     print("---------------------------\n")
     print("What's your names?\n")
     while True:

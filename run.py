@@ -1,11 +1,7 @@
 import os
-import shutil
-
 
 # Globals Variables
 
-# Center the print logs
-columns = shutil.get_terminal_size().columns
 # Game Board for tic tac toe
 board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
 # If the game is still playing
@@ -257,20 +253,20 @@ def main():
     Give the user the multiplayer menu, for start the game or quit.
     """
     clear_reset_screen()
-    print("--------------------------".center(columns))
-    print("Welcome to the multiplayer".center(columns))
-    print("--------------------------".center(columns))
-    print("--------------------------".center(columns))
-    print("        Tic-Tac-Toe       ".center(columns))
-    print("--------------------------".center(columns))
-    print("What's your names?\n".center(columns))
+    print("--------------------------")
+    print("Welcome to the multiplayer")
+    print("--------------------------")
+    print("--------------------------")
+    print("        Tic-Tac-Toe       ")
+    print("--------------------------")
+    print("What's your names?\n")
     while True:
-        name = input("First Player: \n".center(columns))
+        name = input("First Player: \n")
         if name.strip() == "":
-            print("You need to choose a name".center(columns))
+            print("You need to choose a name")
         else:
-            print("Welcome " + name + " to the game!".center(columns))
-            print(name + " will play with the 'X'\n".center(columns))
+            print("Welcome " + name + " to the game!")
+            print(name + " will play with the 'X'\n")
             while True:
                 name_2 = input("second Player: \n")
                 if name_2.strip() == "":

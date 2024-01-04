@@ -253,12 +253,19 @@ def main():
     Give the user the multiplayer menu, for start the game or quit.
     """
     clear_reset_screen()
-    print("--------------------------")
-    print("Welcome to the multiplayer")
-    print("--------------------------")
-    print("--------------------------")
-    print("        Tic-Tac-Toe       ")
-    print("--------------------------")
+    print("-------------------------------")
+    print("   Welcome to the multiplayer")
+    print("-------------------------------")
+    print(""".·:''''''''''''''''''''''''':·.
+: :  _____   _____   _____  : :
+: : |_   _| |_   _| |_   _| : :
+: :   | |_____| |_____| |   : :
+: :   | |_____| |_____| |   : :
+: :   |_|     |_|     |_|   : :
+'·:.........................:·'""")
+    print("-------------------------------")
+    print("          Tic-Tac-Toe       ")
+    print("-------------------------------")
     print("What's your names?\n")
     while True:
         name = input("First Player: \n")

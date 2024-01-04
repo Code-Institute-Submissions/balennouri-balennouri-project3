@@ -23,7 +23,9 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
   - [Technologies Used](#technologies-used)
   - [Libraries used](#libraries-used)
   - [Testing and Validation](#testing-and-validation)
-    - [PEP8](#pep8)
+    - [Validators](#validators)
+      - [Python](#python)
+      - [HTML](#html)
     - [Manual testing](#manual-testing)
     - [Known Bugs](#known-bugs)
       - [Resolved](#resolved)
@@ -132,11 +134,29 @@ A flowchart describing the logic behind this application has been created using 
 
 ## Testing and Validation
 
-### PEP8
+### Validators
+
+#### Python
+
+- [Code Institute Python linter](https://pep8ci.herokuapp.com/#) was used to validate my project to se if there were any Python errors.
+
+![Py test](assets/readme/test-py.png)
+
+#### HTML
+
+- Test both of the HTML files to see if there were any errors.
+
+index.html
+
+![index test](assets/readme/index.test.png)
+
+layout.html
+
+![]()
 
 ### Manual testing
 
-test on diffrent browsers
+I have tested the website on different browsers and didn't find any bugs or errors on it.
 
 ### Known Bugs
 

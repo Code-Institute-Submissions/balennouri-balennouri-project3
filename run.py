@@ -85,7 +85,7 @@ def handle_turn(player):
     to they choose a valid one.
     """
     print("Choose a position from 1-9\n")
-    position = input("It is " + current_player + " turn to choose: \n")
+    position = input("It is " + current_player + " turn to choose: \n").strip()
 
     valid = False
     while not valid:

@@ -35,7 +35,7 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
     - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
     - [Content And Code](#content-and-code)
-  - [Acknowledgements](#acknowledgements)
+    - [Acknowledgements](#acknowledgements)
 
 ## User Experience Design
 
@@ -144,7 +144,7 @@ A flowchart describing the logic behind this application has been created using 
 
 #### HTML
 
-- Test both of the HTML files to see if there were any errors.
+- [Validator.w3](https://validator.w3.org/nu/) was used to test both of the HTML files to see if there were any errors.
 
 index.html
 
@@ -152,7 +152,7 @@ index.html
 
 layout.html
 
-![]()
+![layout test](assets/readme/index.test.png)
 
 ### Manual testing
 
@@ -209,12 +209,22 @@ To deploy this page to Heroku from its GitHub repository the following steps wer
 
 ### Content And Code
 
+To style the page and the content to Read me:
+
 - The screenshot at the top of the ReadMe was built from [Ami Responsive.](https://ui.dev/amiresponsive)
 - The information about the game in the readme is taken from [wikipedia.](https://sv.wikipedia.org/wiki/Tre_i_rad)
 - The flowchart in readme was made by [Lucidchart.](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier2_mixed_search_brand_exact_&km_CPC_CampaignId=1520850463&km_CPC_AdGroupID=57697288545&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433237648&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=21003&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuS-QAiBPSXj3yOMy75khyNm4_a4nkKCQMtc0JOHhSl6XZthZn-xZxoaAioqEALw_wcB)
 - The code for clear_reset_screen() function was taken from [Coding4you.](http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf)
+- The favicon code was taken from my second project that was inspired by the Love Running project in the beginning.
 
-## Acknowledgements
+To write the code for HTML and Python:
+
+- [Code institute LMS](https://learn.codeinstitute.net/dashboard)
+- [W3Schools](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [Coding 4 You](http://www.coding4you.at/inf_tag/beginners_python_cheat_sheet.pdf)
+
+### Acknowledgements
 
 This site was developed as my Third portfolio project for the Code Institute course in Full Stack Software Development. I would like to thank my mentor David Bowers, the slack community and the Code Institute team.
 

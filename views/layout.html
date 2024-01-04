@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Script elements-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/attach/attach.js"></script>
-    <title>Python Terminal by Code Institute</title>
+
+    <!--Title for website-->
+    <title>Tic-Tac-Toe Game</title>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/bef058a563.js" crossorigin="anonymous"></script>
     <style>
+        /*Asterisk wildcard selector */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
         body {
             font-family: Arial;
         }
@@ -164,6 +179,44 @@
             text-transform: uppercase;
             margin: 10px;
             border-radius: 8px;
+        }
+
+        /* Footer styling */
+        footer {
+            display: flex;
+            margin: 0 5px;
+            text-align: center;
+        }
+
+        .linebreak {
+            margin-bottom: 10px;
+        }
+
+        #social-media {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        #social-list {
+            display: flex;
+            justify-content: center;
+            gap: 85%;
+            font-size: xx-large;
+            width: 50px;
+        }
+
+        #social-list i {
+            color: #0b0b0b;
+        }
+
+        #social-list li {
+            list-style-type: none;
+        }
+
+        #social-media p {
+            font-size: larger;
         }
     </style>
 </head>

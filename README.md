@@ -4,7 +4,7 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
 
 [A live version of the website and the project can be accessed here:](https://balen-nouri-tic-tac-toe-5377b5105884.herokuapp.com/)
 
-![Ami Responsive]()
+![Ami Responsive](assets/readme/amiresponsive.png)
 
 ## Table of Contents
 

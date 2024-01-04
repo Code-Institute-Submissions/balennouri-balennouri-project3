@@ -52,10 +52,10 @@ def play_game():
             print("'p' To play again")
             print("'q' To go back to the menu")
         play_again = input("Your Choice: \n")
-        if play_again.lower() == "p":
+        if play_again.lower().strip() == "p":
             clear_reset_screen()
             reset_game()
-        elif play_again.lower() == "q":
+        elif play_again.lower().strip() == "q":
             clear_reset_screen()
             reset_game()
             main()
@@ -220,10 +220,10 @@ def rules_for_game():
     print("Now press 'p' to play or 'q' to quit the game!")
     choice_of_user = input("Your Choice?: \n")
     while True:
-        if choice_of_user.lower() == "p":
+        if choice_of_user.lower().strip() == "p":
             clear_reset_screen()
             play_game()
-        elif choice_of_user.lower() == "q":
+        elif choice_of_user.lower().strip() == "q":
             clear_reset_screen()
             main()
         else:
@@ -288,16 +288,16 @@ def main():
                     user_choice = input("What's your choice: \n")
                     # Give the user option to play,read rules or quit.
                     while True:
-                        if user_choice.lower() == "r":
+                        if user_choice.lower().strip() == "r":
                             clear_reset_screen()
                             rules_for_game()
-                        elif user_choice.lower() == "p":
+                        elif user_choice.lower().strip() == "p":
                             clear_reset_screen()
                             play_game()
                         else:
                             print(
-                                "\nWrong input. Press 'p' to play or 'q'\
-                                      to quit the game."
+                                "\nWrong input. Press 'p' to play or 'q' \
+to quit the game."
                             )
                             user_choice = input("Choose Again: \n")
 

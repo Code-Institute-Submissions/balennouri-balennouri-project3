@@ -71,7 +71,7 @@ Screenshots from the game:
 - Asks both of the users for their names.
 - Asks the users if they want to play, read the rules or quit the game.
 
-![Multiplayer](assets/readme/multiplaye-meny.png)
+![Multiplayer](assets/readme/welcome-page.png)
 
 Rules for the game:
 

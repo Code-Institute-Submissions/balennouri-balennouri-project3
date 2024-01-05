@@ -73,13 +73,13 @@ Screenshots from the game:
 - Asks both of the users for their names.
 - Asks the users if they want to play, read the rules or quit the game.
 
-![Multiplayer](assets/readme/welcome-page.png)
+![Multiplayer](assets/readme/meny.png)
 
 Rules for the game:
 
 - Explain the game and the rules for Tic Tac Toe.
 
-![Rules](assets/readme/rules-meny.png)
+![Rules](assets/readme/meny-rules.png)
 
 How the game board looks like:
 
@@ -87,13 +87,13 @@ How the game board looks like:
 - When the first player chooses a spot, the terminal clears everything and shows the first player's move.
 - When the second player chooses a spot, the terminal clears everything as well and then shows the new board.
 
-![Gameboard](assets/readme/play-game.png)
+![Gameboard](assets/readme/game-board.png)
 
 When the game is done:
 
 - When the game is done, whether it's a draw or a winner. The users get asked if they want to play again.
 
-![Play Again](assets/readme/play_again..png)
+![Play Again](assets/readme/meny-third.png)
 
 ### Future Feature
 

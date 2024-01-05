@@ -16,6 +16,7 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
   - [How To Play](#how-to-play)
   - [Features](#features)
     - [Game](#game)
+    - [Social Media Section](#social-media-section)
     - [Future Feature](#future-feature)
   - [Data Model](#data-model)
   - [Flowchart](#flowchart)
@@ -95,6 +96,14 @@ When the game is done:
 - When the game is done, whether it's a draw or a winner. The users get asked if they want to play again.
 
 ![Play Again](assets/readme/meny-third.png)
+
+### Social Media Section
+
+![footer](assets/readme/footer.png)
+
+- Underneath the terminal the user will see my social media accounts.
+- There are three social media icons. Instagram, GitHub and LinkedIn.
+- When the user click on one of the icons it will open in a new tab.
 
 ### Future Feature
 

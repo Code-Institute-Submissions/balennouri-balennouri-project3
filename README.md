@@ -57,7 +57,7 @@ As a user of this website:
 
 ## How To Play
 
-    Tic-tac-toe is a game in which two players take turns in drawing, either an 'O' or an 'X' in one square of a grid, consisting of nine squares. The winner is the first player to get three of the same symbols in a row, vertically, horizontally or diagonally.
+Tic-tac-toe is a game in which two players take turns in drawing, either an 'O' or an 'X' in one square of a grid, consisting of nine squares. The winner is the first player to get three of the same symbols in a row, vertically, horizontally or diagonally.
 
 ## Features
 
@@ -204,6 +204,8 @@ To deploy this page to Heroku from its GitHub repository the following steps wer
 - Set the buildbacks to python and NodeJS in that order.
 - Link the Heroku app to the respository.
 - Click on Deploy.
+
+[A live version of the website and the project can be accessed here:](https://balen-nouri-tic-tac-toe-5377b5105884.herokuapp.com/)
 
 ## Credits
 

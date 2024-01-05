@@ -1,4 +1,4 @@
-# Balen Nouri Tic-Tac-Toe Mulitplayer
+# Balen Nouri Tic-Tac-Toe Multiplayer
 
 Three in a row or tic tac toe, everyone has played this game, maybe in school with paper and pen or on a real board.  For those who don’t know about the game, it’s a classic old game with 3 x 3 boxes for two players. One will play with the X and the other one with the O and the one who gets three in a row will win. So, if you and your friend want to challenge each other and wake up old memories from the classic game, click on the link below.
 
@@ -8,7 +8,7 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
 
 ## Table of Contents
 
-- [Balen Nouri Tic-Tac-Toe Mulitplayer](#balen-nouri-tic-tac-toe-mulitplayer)
+- [Balen Nouri Tic-Tac-Toe Multiplayer](#balen-nouri-tic-tac-toe-multiplayer)
   - [Table of Contents](#table-of-contents)
   - [User Experience Design](#user-experience-design)
     - [User Demographic](#user-demographic)
@@ -26,6 +26,7 @@ Three in a row or tic tac toe, everyone has played this game, maybe in school wi
     - [Validators](#validators)
       - [Python](#python)
       - [HTML](#html)
+      - [CSS](#css)
     - [Manual testing](#manual-testing)
     - [Known Bugs](#known-bugs)
       - [Resolved](#resolved)
@@ -154,6 +155,12 @@ layout.html
 
 ![layout test](assets/readme/index.test.png)
 
+#### CSS
+
+- [Jigsaw.w3](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbalen-nouri-tic-tac-toe-5377b5105884.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) Was used to test my CSS part on the website to see if there was any errors.
+
+![CSS TEST](assets/readme/css-test.png)
+
 ### Manual testing
 
 I have tested the website on different browsers and didn't find any bugs or errors on it.
@@ -202,7 +209,7 @@ To deploy this page to Heroku from its GitHub repository the following steps wer
 - Enter your app name in the first field, the names must be unique so check that the name you have chosen is available on Heroku, then select your region.
 - Click on Create App.
 - Set the buildbacks to python and NodeJS in that order.
-- Link the Heroku app to the respository.
+- Link the Heroku app to the repository.
 - Click on Deploy.
 
 [A live version of the website and the project can be accessed here:](https://balen-nouri-tic-tac-toe-5377b5105884.herokuapp.com/)
@@ -230,4 +237,4 @@ To write the code for HTML and Python:
 
 This site was developed as my Third portfolio project for the Code Institute course in Full Stack Software Development. I would like to thank my mentor David Bowers, the slack community and the Code Institute team.
 
-[Back to Table of contents](#balen-nouri-tic-tac-toe-mulitplayer)
+[Back to Table of contents](#balen-nouri-tic-tac-toe-multiplayer)

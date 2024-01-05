@@ -8,13 +8,13 @@ board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
 game_is_still_playing = True
 # Who won? or tie?
 winner = None
-# Whos turn is it
+# who's turn is it
 current_player = "X"
 
 
 def display_board():
     """
-    Create the board for Tic Tac Toe and the refernce board.
+    Create the board for Tic Tac Toe and the reference board.
     """
     print("\nReference board: \n")
     print("|1|2|3|")
@@ -60,7 +60,7 @@ def play_game():
             main()
         else:
             print("Wrong input choose again!")
-            play_again = input("Your Choise: \n")
+            play_again = input("Your Choice: \n")
 
 
 def reset_game():
@@ -80,7 +80,7 @@ def handle_turn(player):
     Tells the users who's turn it's.
     don't let the players use a invalid input.
     with while loop it checks the users input if it's
-    inavlid or correct or it will loop
+    invalid or correct or it will loop
     to they choose a valid one.
     """
     print("Choose a position from 1-9\n")
@@ -249,7 +249,7 @@ def clear_reset_screen(numlines=100):
 
 def main():
     """
-    Main functon that shows the start menu and calls the start game.
+    Main function that shows the start menu and calls the start game.
     Give the user the multiplayer menu, for start the game or quit.
     """
     clear_reset_screen()

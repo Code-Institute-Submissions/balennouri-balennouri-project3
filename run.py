@@ -297,7 +297,7 @@ def main():
                         else:
                             print(
                                 "\nWrong input. Press 'p' to play or 'q' \
-to quit the game."
+to quit the game or 'r' to read the rules."
                             )
                             user_choice = input("Choose Again: \n")
 
